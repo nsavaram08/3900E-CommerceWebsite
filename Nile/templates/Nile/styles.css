@@ -1,0 +1,72 @@
+
+body {
+    font-family: "Lato", sans-serif;
+    margin: 0; /* Add margin 0 to ensure no default margin is applied */
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #b7b9b6;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #E9EEE7;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+.dropdown-toggle {
+    white-space: nowrap !important;
+    text-overflow: ellipsis !important;
+    width: 100%;
+    border-color: transparent !important;
+}
+
+.header_nav1, .header_nav2 {
+    display: inline;
+    color: #000;
+    font-family: verdana;
+    text-transform: uppercase;
+    max-width: 1024px;
+    margin: 0 auto; /* Center the content within the viewport */
+}
+
+.header_nav1 ul li,
+.header_nav2 ul li {
+    padding-top: 10px;
+    list-style-type: none;
+    display: inline;
+}
+
+.header_nav2 ul li {
+    padding-right: 15px;
+}
+

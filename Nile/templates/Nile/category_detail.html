@@ -1,0 +1,15 @@
+{{% extends 'Nile/base.html' %}
+
+{% block title %}{{ category.name }}{% endblock %}
+
+{% block content %}
+  <h2>{{ category.name }}</h2>
+  <p>{{ category.description }}</p>
+
+  <h3>Subcategories</h3>
+  <ul>
+    {% for subcategory in category.subcategory_set.all %}
+      <li><a href="{% url 'Nile:subcategory_detail' pk=subcategory.pk %}">{{ subcategory.name }}</a></li>
+    {% endfor %}
+  </ul>
+{% endblock %}

@@ -1,0 +1,17 @@
+{% extends "Nile/base.html" %}
+
+{% block title %}
+    Thank you
+{% endblock %}
+
+{% block content %}
+    <div>
+        <h1>Thank you</h1>
+        <p>Your order has been successfully completed. Your order number is <strong>{{ order_id }}</strong>.</p>
+    </div>
+    <br>
+    <div>
+        <a href="{% url "Nile:index" %}" class="button light">Continue shopping</a>
+        <a href="{% url "Nile:order_list" %}" class="button light">Your Orders</a>
+    </div>
+{% endblock %}
